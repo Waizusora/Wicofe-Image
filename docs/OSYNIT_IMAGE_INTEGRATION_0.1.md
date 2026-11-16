@@ -1,25 +1,25 @@
-# OSynit Image Integration 0.1
+# Osynit Image Integration 0.1
 
 - **Status:** Proposed image integration
 - **Owner:** Wicofe-Image
-- **Component authority:** [OSynit](https://github.com/Waizusora/Osynit)
+- **Component authority:** [Osynit](https://github.com/Waizusora/Osynit)
 - **Date:** 2026-11-16
 
 ## 1. Purpose
 
-Define the root-filesystem and image-manifest requirements for packaging OSynit. This does not freeze a partition layout, bootloader configuration, filesystem format, or claim a bootable release image.
+Define the root-filesystem and image-manifest requirements for packaging Osynit. This does not freeze a partition layout, bootloader configuration, filesystem format, or claim a bootable release image.
 
 ## 2. Required system payload
 
-A Wicofe system profile that selects OSynit as init must identify:
-- the OSynit executable artifact, architecture, ABI compatibility, source revision and hash;
+A Wicofe system profile that selects Osynit as init must identify:
+- the Osynit executable artifact, architecture, ABI compatibility, source revision and hash;
 - the init executable path and boot handoff configuration;
-- the selected OSynit configuration profile;
+- the selected Osynit configuration profile;
 - required service unit and target definitions;
 - the minimum runtime directory and filesystem prerequisites;
 - the expected platform capability profile.
 
-The executable name is `osynit`; the project name is **OSynit**. The proposed installed path is `/usr/sbin/osynit`, pending root filesystem policy.
+The executable name is `osynit`; the project name is **Osynit**. The proposed installed path is `/usr/sbin/osynit`, pending root filesystem policy.
 
 ## 3. Configuration and runtime paths
 
@@ -33,13 +33,13 @@ The root filesystem profile must validate the availability and semantics of `/us
 
 ## 4. Init handoff
 
-The boot manifest must point to the selected OSynit executable using the kernel's documented init handoff contract. The kernel starts it as PID 1; the image builder must not embed service lifecycle policy in bootloader configuration.
+The boot manifest must point to the selected Osynit executable using the kernel's documented init handoff contract. The kernel starts it as PID 1; the image builder must not embed service lifecycle policy in bootloader configuration.
 
-If OSynit is absent, hash-invalid, ABI-incompatible, or lacks required platform capabilities, the image must fail validation rather than silently selecting an unrelated init implementation.
+If Osynit is absent, hash-invalid, ABI-incompatible, or lacks required platform capabilities, the image must fail validation rather than silently selecting an unrelated init implementation.
 
 ## 5. External services and optional modules
 
-The image manifest separately selects external daemons and their service unit definitions. Network, device, storage, user/session, time, audio, graphics, and desktop behavior remain outside OSynit's mandatory core.
+The image manifest separately selects external daemons and their service unit definitions. Network, device, storage, user/session, time, audio, graphics, and desktop behavior remain outside Osynit's mandatory core.
 
 Optional mount/socket/timer/logging/resource/security/watchdog modules are included only when explicitly selected and compatible. Their absence must not block Core Init.
 
