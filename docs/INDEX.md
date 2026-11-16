@@ -7,6 +7,9 @@ This directory documents system image composition and release artifact definitio
 - [Osynit image integration 0.1](OSYNIT_IMAGE_INTEGRATION_0.1.md) — init payload, configuration, unit files, runtime paths and validation.
 - [Osynit image integration 0.1](OSYNIT_IMAGE_INTEGRATION_0.1.md) — init payload, configuration, unit files, runtime paths and image validation.
 
+## Whole-system product direction
+- [Wicofe system delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned Delivery Release model and ordinary versus urgent security artifact delivery.
+
 ## Scope
 - Image manifests and package selection.
 - Bootable disk and virtual-machine image assembly.
