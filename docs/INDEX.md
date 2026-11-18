@@ -4,8 +4,7 @@ This directory documents system image composition and release artifact definitio
 
 ## Architecture
 - [System image architecture 0.1](IMAGE_SYSTEM_ARCHITECTURE_0.1.md) — draft design for manifests, artifact intake, filesystem trees, disk/boot layout boundaries, validation and reproducible release bundles.
-- [Osynit image integration 0.1](OSYNIT_IMAGE_INTEGRATION_0.1.md) — init payload, configuration, unit files, runtime paths and validation.
-- [Osynit image integration 0.1](OSYNIT_IMAGE_INTEGRATION_0.1.md) — init payload, configuration, unit files, runtime paths and image validation.
+- [Frenit image integration 0.1](FRENIT_IMAGE_INTEGRATION_0.1.md) — init artifact, ABI compatibility, root-filesystem manifest and boot-handoff gates.
 
 ## Whole-system product direction
 - [Wicofe system delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned Delivery Release model and ordinary versus urgent security artifact delivery.
