@@ -14,6 +14,10 @@ System image composition and release artifact definitions for Wicofe OS.
 
 Wicofe-Build owns build orchestration and toolchain management. WPM owns package management. Wicofe-Installer deploys images or system payloads. Wicofe-Update manages installed-system updates.
 
+## Frenit root-filesystem integration
+
+[Frenit](https://github.com/Waizusora/Frenit) is the planned canonical init executable for Wicofe images. Wicofe-Image owns root-filesystem composition and manifest validation; it does not implement Frenit or define kernel process/ABI behavior. A future image manifest must declare the Frenit artifact revision/hash, target architecture, runtime dependencies, configuration and ABI compatibility. Do not invent an executable path or select Frenit as PID 1 until the cross-component gates in [WIC-SPEC-BOOT-FRENIT-001](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md) are accepted and verified.
+
 ## Reproducibility
 
 Record exact source revisions, toolchain versions, package inputs, build configuration, and artifact hashes. Avoid unpinned network dependencies in release builds.
