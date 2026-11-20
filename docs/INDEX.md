@@ -7,7 +7,7 @@ This directory documents system image composition and release artifact definitio
 - [Frenit image integration 0.1](FRENIT_IMAGE_INTEGRATION_0.1.md) — init artifact, ABI compatibility, root-filesystem manifest and boot-handoff gates.
 
 ## Whole-system product direction
-- [Wicofe system delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned Delivery Release model and ordinary versus urgent security artifact delivery.
+- [Wicofe system delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Doc/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned Delivery Release model and ordinary versus urgent security artifact delivery.
 
 ## Scope
 - Image manifests and package selection.
@@ -21,5 +21,5 @@ This directory documents system image composition and release artifact definitio
 ## Reproducibility
 Record exact source revisions, toolchain versions, package inputs, configuration, and artifact hashes. Do not claim an official release image until its manifest and validation evidence are published. ONWFS 0.2.x remains a draft proposal and must not be treated as a stable production format.
 
-- [Central documentation index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md)
-- [Repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
+- [Central documentation index](https://github.com/Waizusora/Wicofe-Doc/blob/main/INDEX.md)
+- [Repository documentation map](https://github.com/Waizusora/Wicofe-Doc/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
