@@ -3,7 +3,7 @@
 - **Status:** Proposed image integration; no Frenit-enabled native boot image is verified.
 - **Owner:** Wicofe-Image for root-filesystem composition and manifest validation.
 - **Component authority:** [Frenit — Free Init](https://github.com/Waizusora/Frenit).
-- **Cross-component contract:** [WIC-SPEC-BOOT-FRENIT-001](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md).
+- **Cross-component contract:** [WIC-SPEC-BOOT-FRENIT-001](https://github.com/Waizusora/Wicofe-Spec/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md).
 - **Date:** 2026-11-18
 
 ## 1. Purpose
